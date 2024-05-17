@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uzs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-10 bg-orange-600	 from-sky-500 to-indigo-500 text-white font-mono ">
+    <h1 class="text-9xl font-bold text-center tracking-wide ">Welcome</h1>
+    <h2 class="text-center mt-5">Get start with your first registration</h2>
+    <div class="flex gap-10 items-center">
+      <form class="flex flex-col gap-4 mt-16">
+        <label class="mb-4 flex gap-2 items-center" for="name">
+          <span class="block tracking-wide text-xl">Name:</span>
+          <input
+            id="name"
+            class="rounded bg-transparent border-b-2 border-white hover:border-black transition duration-300 placeholder:italic placeholder:text-slate-300"
+            type="text"
+            placeholder="Peter Parker"
+            required
+          />
+        </label>
+        <label class="mb-4 flex gap-2 items-center" for="image">
+          <span class="block tracking-wide text-xl">Image:</span>
+          <input
+            id="image"
+            class="rounded bg-transparent border-b-2 border-white hover:border-black transition duration-300 placeholder:italic placeholder:text-slate-300"
+            type="url"
+            placeholder="https://image.jpg"
+            required
+          />
+        </label>
+        <label class="mb-4 flex gap-2 items-center" for="phone">
+          <span class="block tracking-wide text-xl">Number:</span>
+          <input
+            id="phone"
+            class="rounded bg-transparent border-b-2 border-white hover:border-black transition duration-300 placeholder:italic placeholder:text-slate-300"
+            type="tel"
+            placeholder="+998958880829"
+            required
+          />
+        </label>
+        <label class="mb-4 flex gap-2 items-center" for="email">
+          <span class="block tracking-wide text-xl">Email:</span>
+          <input
+            id="email"
+            class="rounded bg-transparent border-b-2 border-white-400 hover:border-black transition duration-300 placeholder:italic placeholder:text-slate-300"
+            type="email"
+            placeholder="hello@gmail.com"
+            required
+          />
+        </label>
+        <button
+          class="border px-4 py-1 rounded hover:bg-white hover:text-black transition duration-300"
+        >
+          Submit
+        </button>
+      </form>
+      <ul class="mt-10 flex flex-wrap gap-10">
+          <template>
+          <li class="rounded bg-white text-black flex flex-col gap-2">
+            <img
+              src="https://static.wikia.nocookie.net/mobile-legends/images/e/ee/Mobile_Legends_5v5_Logo_Fair_MOBA_for_Mobile.JPG/revision/latest?cb=20200819062413"
+              class="rounded-t"
+            />
+            <h3 class="px-2 text-xl">Name:Mobile Legends</h3>
+            <a class="tel px-2 text-xl transition duration-300 hover:underline decoration-solid">Tel: +998958880829</a>
+            <a class="mb-4 email px-2 text-xl transition duration-300 hover:underline decoration-solid">Email: mobilelegends@gmail.com</a>
+          </li>
+          </template>
+        </ul>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
